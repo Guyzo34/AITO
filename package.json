@@ -1,0 +1,33 @@
+{
+  "name": "agents-marketing",
+  "private": true,
+  "version": "0.1.0",
+  "packageManager": "npm@10.9.2",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev --parallel",
+    "typecheck": "turbo run typecheck",
+    "lint": "turbo run lint",
+    "db:generate": "npx prisma generate --schema packages/db/prisma/schema.prisma",
+    "db:migration:generate": "npx prisma migrate diff --from-empty --to-schema-datamodel packages/db/prisma/schema.prisma --script > packages/db/prisma/migrations/20260425120000_init/migration.sql",
+    "api:dev": "npm run dev -w @agents-marketing/api",
+    "api:start": "npm run start -w @agents-marketing/api",
+    "worker:dev": "npm run dev -w @agents-marketing/worker",
+    "worker:start": "npm run start -w @agents-marketing/worker"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "prisma": "^6.18.0",
+    "tsup": "^8.5.0",
+    "tsx": "^4.20.6",
+    "turbo": "^2.5.8",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "@prisma/client": "^6.19.3"
+  }
+}

@@ -1,0 +1,119 @@
+/* ============================================================
+   AIMH — Amicale des Ivoiriens de Montpellier et Hérault
+   Système de design - thème clair avec couleurs ivoiriennes
+   ============================================================ */
+
+@import "tailwindcss";
+
+/* Palette ivoirienne : orange #F77F00, blanc, vert #009A44 */
+:root {
+  --background:        oklch(0.98 0.005 85);
+  --foreground:        oklch(0.15 0.02 260);
+  --card:              oklch(1 0 0);
+  --card-foreground:   oklch(0.15 0.02 260);
+  --popover:           oklch(1 0 0);
+  --popover-foreground:oklch(0.15 0.02 260);
+  --primary:           oklch(0.64 0.19 53);   /* orange ivoirien */
+  --primary-foreground:oklch(1 0 0);
+  --secondary:         oklch(0.52 0.17 148);  /* vert ivoirien */
+  --secondary-foreground:oklch(1 0 0);
+  --muted:             oklch(0.96 0.008 85);
+  --muted-foreground:  oklch(0.50 0.015 260);
+  --accent:            oklch(0.95 0.025 53);   /* orange très clair */
+  --accent-foreground: oklch(0.35 0.10 53);
+  --destructive:       oklch(0.55 0.22 25);
+  --destructive-foreground: oklch(1 0 0);
+  --border:            oklch(0.88 0.010 85);
+  --input:             oklch(0.96 0.008 85);
+  --ring:              oklch(0.64 0.19 53 / 30%);
+  --radius:            0.75rem;
+}
+
+@theme inline {
+  --font-sans:          var(--font-instrument-sans);
+  --font-display:       var(--font-syne);
+  --color-background:   var(--background);
+  --color-foreground:   var(--foreground);
+  --color-card:         var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover:      var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary:      var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary:    var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted:        var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent:       var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive:  var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border:       var(--border);
+  --color-input:        var(--input);
+  --color-ring:         var(--ring);
+  --radius-sm:          calc(var(--radius) - 0.25rem);
+  --radius-md:          var(--radius);
+  --radius-lg:          calc(var(--radius) + 0.25rem);
+  --radius-xl:          calc(var(--radius) + 0.75rem);
+}
+
+* {
+  border-color: var(--border);
+  box-sizing: border-box;
+}
+
+html {
+  color-scheme: light;
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-instrument-sans), sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+textarea,
+select {
+  outline: none;
+}
+
+::selection {
+  background: oklch(0.64 0.19 53 / 20%);
+}
+
+/* ── Utilitaires globaux ── */
+
+/* Bandeau tricolore ivoirien */
+.flag-stripe {
+  background: linear-gradient(to right, #F77F00 33.3%, #FFFFFF 33.3% 66.6%, #009A44 66.6%);
+}
+
+/* Dégradé texte orange */
+.text-gradient-orange {
+  background-image: linear-gradient(135deg, #F77F00, #FF9500);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Carte avec ombre douce */
+.card-shadow {
+  box-shadow: 0 2px 8px oklch(0.15 0.02 260 / 0.08), 0 8px 32px oklch(0.15 0.02 260 / 0.06);
+}
+
+/* Fond hero avec pattern discret */
+.hero-pattern {
+  background-image:
+    radial-gradient(circle at 20% 50%, oklch(0.64 0.19 53 / 0.07), transparent 40%),
+    radial-gradient(circle at 80% 20%, oklch(0.52 0.17 148 / 0.06), transparent 35%);
+}

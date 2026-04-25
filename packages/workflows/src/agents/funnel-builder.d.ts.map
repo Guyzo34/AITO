@@ -1,0 +1,1 @@
+{"version":3,"file":"funnel-builder.d.ts","sourceRoot":"","sources":["funnel-builder.ts"],"names":[],"mappings":"AAKA,OAAO,KAAK,EAAE,aAAa,EAAE,oBAAoB,EAAE,mBAAmB,EAAE,MAAM,YAAY,CAAC;AAK3F,KAAK,OAAO,GAAG,oBAAoB,CAAC,gBAAgB,CAAC,CAAC;AAuFtD,wBAAsB,4BAA4B,CAAC,OAAO,EAAE,OAAO,GAAG,OAAO,CAAC,mBAAmB,CAAC,CAgDjG;AAED,eAAO,MAAM,qBAAqB,EAAE,aAAa,CAAC,gBAAgB,CAQjE,CAAC"}

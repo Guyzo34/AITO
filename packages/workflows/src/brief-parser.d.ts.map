@@ -1,0 +1,1 @@
+{"version":3,"file":"brief-parser.d.ts","sourceRoot":"","sources":["brief-parser.ts"],"names":[],"mappings":"AACA,OAAO,EAGL,KAAK,SAAS,EACd,KAAK,mBAAmB,EACxB,KAAK,eAAe,EACrB,MAAM,yBAAyB,CAAC;AASjC,MAAM,WAAW,gBAAgB;IAC/B,YAAY,EAAE,MAAM,CAAC;IACrB,SAAS,EAAE,SAAS,CAAC;IACrB,YAAY,EAAE,mBAAmB,CAAC;CACnC;AAuCD,wBAAsB,UAAU,CAAC,KAAK,EAAE,gBAAgB,GAAG,OAAO,CAAC,eAAe,CAAC,CAclF"}

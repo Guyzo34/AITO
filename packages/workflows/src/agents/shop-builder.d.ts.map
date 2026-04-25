@@ -1,0 +1,1 @@
+{"version":3,"file":"shop-builder.d.ts","sourceRoot":"","sources":["shop-builder.ts"],"names":[],"mappings":"AAKA,OAAO,KAAK,EAAE,aAAa,EAAE,oBAAoB,EAAE,mBAAmB,EAAE,MAAM,YAAY,CAAC;AAK3F,KAAK,OAAO,GAAG,oBAAoB,CAAC,cAAc,CAAC,CAAC;AA8EpD,wBAAsB,0BAA0B,CAAC,OAAO,EAAE,OAAO,GAAG,OAAO,CAAC,mBAAmB,CAAC,CAgD/F;AAED,eAAO,MAAM,mBAAmB,EAAE,aAAa,CAAC,cAAc,CAQ7D,CAAC"}

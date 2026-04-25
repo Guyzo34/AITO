@@ -1,0 +1,12 @@
+.git
+.turbo
+node_modules
+apps/web/.next
+apps/web/node_modules
+apps/api/node_modules
+apps/worker/node_modules
+packages/*/node_modules
+packages/db/generated/client/query_engine-windows.dll.node
+*.log
+.env
+.env.local

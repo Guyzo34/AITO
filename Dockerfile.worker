@@ -1,0 +1,33 @@
+# syntax=docker/dockerfile:1
+# ── Agents Marketing — Worker Service ─────────────────────────────────────────
+# Build context MUST be the monorepo root:
+#   docker build -f Dockerfile.worker -t agents-marketing-worker .
+FROM node:20-slim AS base
+WORKDIR /app
+
+# ── 1. Install dependencies ───────────────────────────────────────────────────
+COPY package.json package-lock.json ./
+COPY apps/worker/package.json          ./apps/worker/
+COPY packages/config/package.json      ./packages/config/
+COPY packages/db/package.json          ./packages/db/
+COPY packages/workflows/package.json   ./packages/workflows/
+COPY packages/ai/package.json          ./packages/ai/
+COPY packages/types/package.json       ./packages/types/
+
+RUN npm ci --ignore-scripts
+
+# ── 2. Copy source files ──────────────────────────────────────────────────────
+COPY apps/worker       ./apps/worker
+COPY packages/config   ./packages/config
+COPY packages/db       ./packages/db
+COPY packages/workflows ./packages/workflows
+COPY packages/ai       ./packages/ai
+COPY packages/types    ./packages/types
+
+# ── 3. Generate Prisma client for Linux (debian/openssl-3.0.x) ───────────────
+RUN npx prisma generate --schema packages/db/prisma/schema.prisma
+
+# ── 4. Runtime ────────────────────────────────────────────────────────────────
+ENV NODE_ENV=production
+
+CMD ["npx", "tsx", "apps/worker/src/index.ts"]

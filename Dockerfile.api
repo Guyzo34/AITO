@@ -1,0 +1,31 @@
+# syntax=docker/dockerfile:1
+# ── Agents Marketing — API Service ────────────────────────────────────────────
+# Build context MUST be the monorepo root:
+#   docker build -f Dockerfile.api -t agents-marketing-api .
+FROM node:20-slim AS base
+WORKDIR /app
+
+# ── 1. Install dependencies ───────────────────────────────────────────────────
+# Copy workspace manifests first to leverage layer cache
+COPY package.json package-lock.json ./
+COPY apps/api/package.json          ./apps/api/
+COPY packages/config/package.json   ./packages/config/
+COPY packages/db/package.json       ./packages/db/
+COPY packages/types/package.json    ./packages/types/
+
+RUN npm ci --ignore-scripts
+
+# ── 2. Copy source files ──────────────────────────────────────────────────────
+COPY apps/api         ./apps/api
+COPY packages/config  ./packages/config
+COPY packages/db      ./packages/db
+COPY packages/types   ./packages/types
+
+# ── 3. Generate Prisma client for Linux (debian/openssl-3.0.x) ───────────────
+RUN npx prisma generate --schema packages/db/prisma/schema.prisma
+
+# ── 4. Runtime ────────────────────────────────────────────────────────────────
+EXPOSE 4000
+ENV NODE_ENV=production
+
+CMD ["npx", "tsx", "apps/api/src/server.ts"]

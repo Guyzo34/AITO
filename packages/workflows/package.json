@@ -1,0 +1,20 @@
+{
+  "name": "@agents-marketing/workflows",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "./src/index.ts",
+  "types": "./src/index.ts",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json",
+    "lint": "tsc -p tsconfig.json"
+  },
+  "dependencies": {
+    "@agents-marketing/ai": "0.1.0",
+    "@agents-marketing/db": "0.1.0",
+    "@agents-marketing/types": "0.1.0",
+    "@supabase/supabase-js": "^2.104.1",
+    "zod": "^4.1.12"
+  }
+}
