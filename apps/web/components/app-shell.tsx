@@ -1,5 +1,5 @@
 /*
- * Composant hérité du projet précédent — remplacé par MembreNav pour la plateforme AIMH.
+ * Composant hérité du projet précédent — remplacé par MembreNav pour la plateforme AITO.
  * Ce fichier est conservé pour éviter de casser l'historique git.
  */
 

@@ -94,7 +94,7 @@ export function MembreNav(props: { children: ReactNode }) {
             <span className="flex size-8 items-center justify-center rounded-full bg-primary text-primary-foreground">
               <Users className="size-4" />
             </span>
-            AIMH
+            AITO
           </Link>
           <p className="mt-1 text-xs text-muted-foreground">Espace membre</p>
         </div>
@@ -174,7 +174,7 @@ export function MembreNav(props: { children: ReactNode }) {
           >
             {mobileOpen ? <X className="size-5" /> : <Menu className="size-5" />}
           </button>
-          <span className="font-display text-lg font-semibold text-primary">AIMH</span>
+          <span className="font-display text-lg font-semibold text-primary">AITO</span>
         </header>
 
         {/* Contenu des pages membre */}

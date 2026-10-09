@@ -80,10 +80,10 @@ export default function ConnexionPage() {
             <span className="flex size-12 items-center justify-center rounded-full bg-primary text-primary-foreground text-xl font-bold font-display">
               A
             </span>
-            <span className="font-display text-2xl font-bold text-primary">AIMH</span>
+            <span className="font-display text-2xl font-bold text-primary">AITO</span>
           </Link>
           <p className="mt-2 text-sm text-muted-foreground">
-            Espace membre — Amicale des Ivoiriens de Montpellier et Hérault
+            Espace membre — Association des Ivoiriens de Toulouse et de l'Occitanie
           </p>
         </div>
 
@@ -229,7 +229,7 @@ export default function ConnexionPage() {
             <p className="mt-6 text-center text-sm text-muted-foreground">
               Pas encore membre ?{" "}
               <Link href="/inscription" className="font-medium text-primary hover:underline">
-                Rejoindre l'AIMH
+                Rejoindre l'AITO
               </Link>
             </p>
           </CardContent>

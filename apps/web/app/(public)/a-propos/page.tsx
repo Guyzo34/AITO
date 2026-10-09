@@ -7,7 +7,7 @@ import { Card, CardContent } from "@/components/ui/card";
 export const metadata: Metadata = {
   title: "À propos",
   description:
-    "Découvrez l'histoire, les missions et le bureau de l'AIMH — Amicale des Ivoiriens de Montpellier et Hérault."
+    "Découvrez l'histoire, les missions et le bureau de l'AITO — Association des Ivoiriens de Toulouse et de l'Occitanie."
 };
 
 /* Membres du bureau */
@@ -26,7 +26,7 @@ const MISSIONS = [
     icon: Users,
     titre: "Rassemblement",
     texte:
-      "Fédérer les Ivoiriens et amis de la Côte d'Ivoire résidant à Montpellier et dans l'Hérault autour d'un projet communautaire commun."
+      "Fédérer les Ivoiriens et amis de la Côte d'Ivoire résidant à Toulouse et dans l'Haute-Garonne autour d'un projet communautaire commun."
   },
   {
     icon: Heart,
@@ -59,11 +59,11 @@ export default function AProposPage() {
             Notre histoire
           </span>
           <h1 className="font-display text-4xl font-bold text-foreground sm:text-5xl">
-            À propos de l'AIMH
+            À propos de l'AITO
           </h1>
           <p className="mt-5 text-lg leading-8 text-muted-foreground">
-            Depuis notre création, l'AIMH œuvre pour l'épanouissement et l'intégration des Ivoiriens
-            de Montpellier et du département de l'Hérault.
+            Depuis notre création, l'AITO œuvre pour l'épanouissement et l'intégration des Ivoiriens
+            de Toulouse et du département de l'Haute-Garonne.
           </p>
         </div>
       </div>
@@ -74,20 +74,20 @@ export default function AProposPage() {
           <h2 className="mb-6 font-display text-2xl font-bold text-foreground">Notre histoire</h2>
           <div className="prose prose-stone max-w-none text-muted-foreground leading-8">
             <p>
-              L'Amicale des Ivoiriens de Montpellier et Hérault (AIMH) a été fondée par un groupe
+              L'Association des Ivoiriens de Toulouse et de l'Occitanie (AITO) a été fondée par un groupe
               de Ivoiriens passionnés par l'idée de créer un cadre de vie associatif fort pour
               leur communauté au cœur du Languedoc.
             </p>
             <p className="mt-4">
               Face à l'éloignement de la terre natale, il est apparu indispensable de créer un espace
-              d'accueil, d'entraide et de partage. L'AIMH est ainsi née de la volonté de ces hommes et
+              d'accueil, d'entraide et de partage. L'AITO est ainsi née de la volonté de ces hommes et
               femmes de ne pas perdre le lien avec leurs racines tout en s'intégrant pleinement à la
               vie montpelliéraine.
             </p>
             <p className="mt-4">
               Au fil des années, l'association a grandi, s'est structurée et a étendu son action :
               des fêtes culturelles aux permanences administratives, de l'aide à la scolarité aux
-              soirées de gala, l'AIMH est aujourd'hui un acteur incontournable de la vie associative
+              soirées de gala, l'AITO est aujourd'hui un acteur incontournable de la vie associative
               ivoirienne dans le Sud de la France.
             </p>
           </div>
@@ -156,12 +156,12 @@ export default function AProposPage() {
           <div className="mt-6 flex flex-wrap justify-center gap-6 text-sm text-muted-foreground">
             <div className="flex items-center gap-2">
               <MapPin className="size-4 text-primary" />
-              Montpellier, Hérault (34)
+              Toulouse, Haute-Garonne (34)
             </div>
             <div className="flex items-center gap-2">
               <Mail className="size-4 text-primary" />
-              <a href="mailto:contact@aimh.fr" className="hover:text-primary transition">
-                contact@aimh.fr
+              <a href="mailto:contact@aito-occitanie.fr" className="hover:text-primary transition">
+                contact@aito-occitanie.fr
               </a>
             </div>
             <div className="flex items-center gap-2">

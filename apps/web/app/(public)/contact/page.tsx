@@ -60,12 +60,12 @@ export default function ContactPage() {
               {
                 icon: MapPin,
                 titre: "Adresse",
-                contenu: "Montpellier, Hérault (34)\nFrance"
+                contenu: "Toulouse, Haute-Garonne (34)\nFrance"
               },
               {
                 icon: Mail,
                 titre: "Email",
-                contenu: "contact@aimh.fr"
+                contenu: "contact@aito-occitanie.fr"
               },
               {
                 icon: Phone,
@@ -89,7 +89,7 @@ export default function ContactPage() {
             <div className="rounded-xl border border-border bg-accent/50 p-4">
               <p className="text-sm font-medium text-accent-foreground">Permanence administrative</p>
               <p className="mt-1 text-sm text-muted-foreground">
-                Tous les jeudis de 18h à 20h — Maison de Quartier des Beaux-Arts, Montpellier
+                Tous les jeudis de 18h à 20h — Maison de Quartier des Beaux-Arts, Toulouse
               </p>
             </div>
           </div>

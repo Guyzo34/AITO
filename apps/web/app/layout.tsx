@@ -19,15 +19,15 @@ const syne = Syne({
 
 export const metadata: Metadata = {
   title: {
-    default: "AIMH — Amicale des Ivoiriens de Montpellier et Hérault",
-    template: "%s | AIMH"
+    default: "AITO — Association des Ivoiriens de Toulouse et de l'Occitanie",
+    template: "%s | AITO"
   },
   description:
-    "L'Amicale des Ivoiriens de Montpellier et Hérault unit la communauté ivoirienne de la région héraultaise autour de valeurs de solidarité, de culture et d'entraide.",
-  keywords: ["AIMH", "Ivoiriens", "Montpellier", "Hérault", "association", "communauté", "Côte d'Ivoire"],
+    "L'Association des Ivoiriens de Toulouse et de l'Occitanie unit la communauté ivoirienne de Toulouse et de l'Occitanie autour de valeurs de solidarité, de culture et d'entraide.",
+  keywords: ["AITO", "Ivoiriens", "Toulouse", "Haute-Garonne", "association", "communauté", "Côte d'Ivoire"],
   openGraph: {
-    title: "AIMH — Amicale des Ivoiriens de Montpellier et Hérault",
-    description: "Solidarité, culture et entraide — la communauté ivoirienne à Montpellier.",
+    title: "AITO — Association des Ivoiriens de Toulouse et de l'Occitanie",
+    description: "Solidarité, culture et entraide — la communauté ivoirienne à Toulouse.",
     locale: "fr_FR",
     type: "website"
   }

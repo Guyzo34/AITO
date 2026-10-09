@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { getActualitesRecentes, CATEGORIE_COLORS } from "@/lib/data/actualites";
 
-/* Tableau de bord de l'espace membre AIMH */
+/* Tableau de bord de l'espace membre AITO */
 export default function TableauDeBordPage() {
   const { user } = useAuth();
 

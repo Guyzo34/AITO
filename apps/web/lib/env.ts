@@ -1,4 +1,4 @@
-/* Suppression de la dépendance à NEXT_PUBLIC_API_URL pour la Phase 1 AIMH */
+/* Suppression de la dépendance à NEXT_PUBLIC_API_URL pour la Phase 1 AITO */
 const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL;
 const supabaseAnonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
 

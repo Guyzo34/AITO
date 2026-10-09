@@ -37,7 +37,7 @@ export function Header() {
             <Users className="size-5" />
           </span>
           <span>
-            <span className="text-primary">AIMH</span>
+            <span className="text-primary">AITO</span>
           </span>
         </Link>
 
@@ -125,7 +125,7 @@ export function Header() {
                       <Link href="/connexion">Connexion</Link>
                     </Button>
                     <Button asChild onClick={() => setMenuOpen(false)}>
-                      <Link href="/inscription">Rejoindre l'AIMH</Link>
+                      <Link href="/inscription">Rejoindre l'AITO</Link>
                     </Button>
                   </>
                 )}

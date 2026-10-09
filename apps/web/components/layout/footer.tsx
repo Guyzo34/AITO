@@ -18,10 +18,10 @@ export function Footer() {
               <span className="flex size-10 items-center justify-center rounded-full bg-primary text-primary-foreground">
                 <Users className="size-5" />
               </span>
-              <span className="font-display text-xl font-semibold text-primary">AIMH</span>
+              <span className="font-display text-xl font-semibold text-primary">AITO</span>
             </div>
             <p className="text-sm leading-7 opacity-70">
-              Amicale des Ivoiriens de Montpellier et Hérault — solidarité, culture et entraide depuis notre création.
+              Association des Ivoiriens de Toulouse et de l'Occitanie — solidarité, culture et entraide depuis notre création.
             </p>
           </div>
 
@@ -52,7 +52,7 @@ export function Footer() {
             <h3 className="mb-4 text-sm font-semibold uppercase tracking-widest opacity-50">Espace membre</h3>
             <ul className="space-y-3">
               {[
-                { href: "/inscription",        label: "Rejoindre l'AIMH" },
+                { href: "/inscription",        label: "Rejoindre l'AITO" },
                 { href: "/connexion",          label: "Se connecter" },
                 { href: "/tableau-de-bord",    label: "Mon tableau de bord" }
               ].map((link) => (
@@ -71,12 +71,12 @@ export function Footer() {
             <ul className="space-y-3">
               <li className="flex items-center gap-2 text-sm opacity-70">
                 <MapPin className="size-4 shrink-0" />
-                Montpellier, Hérault (34)
+                Toulouse, Haute-Garonne (34)
               </li>
               <li className="flex items-center gap-2 text-sm opacity-70">
                 <Mail className="size-4 shrink-0" />
-                <a href="mailto:contact@aimh.fr" className="hover:opacity-100 transition">
-                  contact@aimh.fr
+                <a href="mailto:contact@aito-occitanie.fr" className="hover:opacity-100 transition">
+                  contact@aito-occitanie.fr
                 </a>
               </li>
               <li className="flex items-center gap-2 text-sm opacity-70">
@@ -121,7 +121,7 @@ export function Footer() {
 
         {/* Bas de page */}
         <div className="mt-10 border-t border-white/10 pt-6 text-center text-xs opacity-50">
-          <p>© {year} AIMH — Amicale des Ivoiriens de Montpellier et Hérault. Tous droits réservés.</p>
+          <p>© {year} AITO — Association des Ivoiriens de Toulouse et de l'Occitanie. Tous droits réservés.</p>
         </div>
       </div>
     </footer>

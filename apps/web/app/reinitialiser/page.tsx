@@ -45,7 +45,7 @@ export default function ReinitialiserPage() {
             <span className="flex size-12 items-center justify-center rounded-full bg-primary text-primary-foreground text-xl font-bold font-display">
               A
             </span>
-            <span className="font-display text-2xl font-bold text-primary">AIMH</span>
+            <span className="font-display text-2xl font-bold text-primary">AITO</span>
           </Link>
         </div>
 

@@ -12,7 +12,7 @@ export default function VerificationPage() {
           <span className="flex size-12 items-center justify-center rounded-full bg-primary text-primary-foreground text-xl font-bold font-display">
             A
           </span>
-          <span className="font-display text-2xl font-bold text-primary">AIMH</span>
+          <span className="font-display text-2xl font-bold text-primary">AITO</span>
         </Link>
 
         {/* Icône */}
@@ -25,7 +25,7 @@ export default function VerificationPage() {
         </h1>
         <p className="mt-4 text-muted-foreground leading-7">
           Nous avons envoyé un lien de confirmation à votre adresse email.
-          Cliquez sur ce lien pour activer votre compte AIMH.
+          Cliquez sur ce lien pour activer votre compte AITO.
         </p>
 
         <div className="mt-6 rounded-xl border border-border bg-card p-4 text-sm text-left card-shadow">

@@ -90,7 +90,7 @@ export default function InscriptionPage() {
             <span className="flex size-12 items-center justify-center rounded-full bg-primary text-primary-foreground text-xl font-bold font-display">
               A
             </span>
-            <span className="font-display text-2xl font-bold text-primary">AIMH</span>
+            <span className="font-display text-2xl font-bold text-primary">AITO</span>
           </Link>
           <p className="mt-2 text-sm text-muted-foreground">
             Créer votre compte membre
@@ -99,7 +99,7 @@ export default function InscriptionPage() {
 
         <Card>
           <CardHeader>
-            <CardTitle className="font-display text-2xl">Rejoindre l'AIMH</CardTitle>
+            <CardTitle className="font-display text-2xl">Rejoindre l'AITO</CardTitle>
             <CardDescription>
               Créez votre compte pour accéder à l'espace membre et aux activités de l'association.
             </CardDescription>

@@ -10,7 +10,7 @@ import { getActualitesRecentes, CATEGORIE_COLORS } from "@/lib/data/actualites";
 export const metadata: Metadata = {
   title: "Accueil",
   description:
-    "Bienvenue à l'AIMH — Amicale des Ivoiriens de Montpellier et Hérault. Rejoignez la communauté ivoirienne de la région."
+    "Bienvenue à l'AITO — Association des Ivoiriens de Toulouse et de l'Occitanie. Rejoignez la communauté ivoirienne de la région."
 };
 
 /* Valeurs de l'association */
@@ -31,7 +31,7 @@ const VALEURS = [
     icon: Users,
     titre: "Communauté",
     description:
-      "Créer des liens durables entre les Ivoiriens et amis de la Côte d'Ivoire installés à Montpellier et en Hérault."
+      "Créer des liens durables entre les Ivoiriens et amis de la Côte d'Ivoire installés à Toulouse et en Haute-Garonne."
   },
   {
     icon: BookOpen,
@@ -56,20 +56,20 @@ export default function HomePage() {
             <div>
               <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-primary/30 bg-accent px-4 py-2 text-sm font-medium text-accent-foreground">
                 <span className="size-2 rounded-full bg-secondary" />
-                Communauté ivoirienne à Montpellier
+                Communauté ivoirienne à Toulouse
               </div>
               <h1 className="font-display text-4xl font-bold leading-tight text-foreground sm:text-5xl lg:text-6xl">
                 Ensemble, nous formons une{" "}
                 <span className="text-gradient-orange">grande famille</span>
               </h1>
               <p className="mt-6 text-lg leading-8 text-muted-foreground">
-                L'Amicale des Ivoiriens de Montpellier et Hérault unit les Ivoiriens de la région autour
+                L'Association des Ivoiriens de Toulouse et de l'Occitanie unit les Ivoiriens de la région autour
                 de valeurs de <strong>solidarité</strong>, de <strong>culture</strong> et d'<strong>entraide</strong>.
               </p>
               <div className="mt-8 flex flex-wrap gap-4">
                 <Button asChild size="lg">
                   <Link href="/inscription">
-                    Rejoindre l'AIMH
+                    Rejoindre l'AITO
                     <ArrowRight className="size-5" />
                   </Link>
                 </Button>
@@ -187,10 +187,10 @@ export default function HomePage() {
       <section className="bg-primary px-4 py-16 sm:px-6">
         <div className="mx-auto max-w-3xl text-center text-primary-foreground">
           <h2 className="font-display text-3xl font-bold sm:text-4xl">
-            Rejoignez la famille AIMH
+            Rejoignez la famille AITO
           </h2>
           <p className="mt-4 text-lg leading-8 opacity-90">
-            Devenez membre et bénéficiez des activités, de l'accompagnement et du soutien de toute la communauté ivoirienne de Montpellier.
+            Devenez membre et bénéficiez des activités, de l'accompagnement et du soutien de toute la communauté ivoirienne de Toulouse.
           </p>
           <div className="mt-8 flex flex-wrap justify-center gap-4">
             <Button

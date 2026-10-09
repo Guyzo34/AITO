@@ -229,7 +229,7 @@ export default function ProfilPage() {
                     </Label>
                     <Input
                       id="ville"
-                      placeholder="Montpellier"
+                      placeholder="Toulouse"
                       value={profil.ville}
                       onChange={update("ville")}
                     />

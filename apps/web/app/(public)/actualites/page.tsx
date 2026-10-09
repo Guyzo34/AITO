@@ -6,7 +6,7 @@ import { ACTUALITES, CATEGORIE_COLORS, CATEGORIES } from "@/lib/data/actualites"
 
 export const metadata: Metadata = {
   title: "Actualités",
-  description: "Restez informé de toutes les actualités, événements et annonces de l'AIMH."
+  description: "Restez informé de toutes les actualités, événements et annonces de l'AITO."
 };
 
 export default function ActualitesPage() {
@@ -22,7 +22,7 @@ export default function ActualitesPage() {
         <div className="mx-auto max-w-3xl text-center">
           <h1 className="font-display text-4xl font-bold text-foreground sm:text-5xl">Actualités</h1>
           <p className="mt-4 text-lg text-muted-foreground">
-            Retrouvez toutes les nouvelles, événements et annonces de l'AIMH
+            Retrouvez toutes les nouvelles, événements et annonces de l'AITO
           </p>
         </div>
       </div>
