@@ -71,7 +71,7 @@ export function Footer() {
             <ul className="space-y-3">
               <li className="flex items-center gap-2 text-sm opacity-70">
                 <MapPin className="size-4 shrink-0" />
-                Toulouse, Haute-Garonne (34)
+                Toulouse, Haute-Garonne (31)
               </li>
               <li className="flex items-center gap-2 text-sm opacity-70">
                 <Mail className="size-4 shrink-0" />
